@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIGMA (formulário de convite)</title>
+
+  <link rel="stylesheet" href="styles/index.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="container-2">
+  <div id="title">Crie seu convite</div>
+  <section>
+    <div class="main-container">
+      <div class="calender">
+        <img src="assets/icons/calendar.svg" alt="">
+        <span>Sobre o evento</span>
+      </div>
+      
+      <form method="post" enctype="multipart/form-data">
+        <fieldset class="personal-info">
+          <div class="input-wrapper">
+            <label
+            for="event-name"
+            name="event-name">
+              Título
+            </label>
+
+            <input
+            id="event-name"
+            type="text"
+            placeholder="Nome do evento">
+          
+          </div>
+
+          <div class="flex">
+            <div class="input-wrapper flex-1">
+              <label
+                for="date"
+                name="date">
+                  Ínicio
+              </label>
+              <input type="date" name="date" id="date" lang="pt-BR">
+            </div>
+
+            <div class="input-wrapper flex-2">
+              <label
+                for="date"
+                name="date">
+                  Fim
+              </label>
+              <input type="date" name="date" id="date" lang="pt-BR">
+            </div>
+
+            <fieldset class="enroll-options">
+              <div class="input-wrapper">
+                <label>Tipo</label>
+
+                <div class="radio-wrapper flex-3">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="type" value="presencial" valid="presencial">
+                    <img src="assets/icons/building-2.svg" alt="">
+                    <label for="presencial">Presencial</label>
+                  </div>
+                 
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="type" value="online" valid="online">
+                    <img src="assets/icons/video.svg" alt="">
+                    <label for="online">Online</label>
+                  </div>
+
+                  <div>
+                      <label
+                        for="url"
+                        name="url">
+                          Local
+                      </label>
+                    <input type="url" name="link" id="url" lang="pt-BR" placeholder="Link ou endereço">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+            <div class="textarea-wrapper">
+              <label for="details-event">Descrição</label>
+              <textarea 
+                name="details-event" 
+                id="details-event"
+                cols="30"
+                rows="5"
+                placeholder="Escreva sobre os detalhes do evento">
+              </textarea>
+            </div>
+        </fieldset>
+
+        <div class="pincel">
+          <img src="assets/icons/paintbrush-vertical.svg" alt="">
+          <span>Personalização</span>
+        </div>
+        <fieldset class="enroll-options-2">
+          <div class="input-wrapper-2">
+            <label
+              for="colors"
+              name="colors">
+              Cor principal
+            </label>
+            <div class="content-colors flex-4-colors">
+              <span id="c1"></span>
+              <span id="c2"></span>
+              <span id="c3"></span>
+              <span id="c4"></span>
+              <span id="c5"></span>
+              <span id="c6"></span>
+              <span id="c7"></span>
+              <span id="c8"></span>
+              <span id="c9"></span>
+              <span id="c10"></span>
+              <span id="c11"></span>
+            </div>
+          </div>
+          
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
